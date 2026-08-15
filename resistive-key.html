@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resistive-Key Vehicle Safety System | Saurav Koduri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-name" href="index.html">Saurav Koduri</a>
+  <nav aria-label="Primary navigation">
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article class="detail-page">
+    <a class="back-link" href="index.html#projects">← Back to portfolio</a>
+    <p class="project-kicker">Analog Electronics · Logic · Hardware Security</p>
+    <h1>Resistive-Key Vehicle Safety System</h1>
+    <div class="detail-actions"></div>
+
+    <div class="detail-hero">
+      <img src="assets/resistive-key-schematic.jpg" alt="Hand-drawn schematic for the resistive-key vehicle safety system">
+    </div>
+
+    <div class="detail-layout">
+      <div class="detail-copy">
+        <p>The Resistive-Key Vehicle Safety System is a hardware authentication prototype built around a simple idea: the physical key contains a resistance value that acts as an electrical credential. When the key is inserted, the circuit converts that resistance into a voltage and compares it against an expected range before allowing the system to proceed.</p>
+<p>I implemented the validation path with comparator circuits and AND-gate logic rather than relying on software for the authentication decision. I also added a three-second delay after an unsuccessful attempt, which makes rapid resistance guessing more difficult. The project was a useful exercise in translating a security concept into analog thresholds, timing behavior, and discrete logic that can be observed and debugged directly on the bench.</p>
+      </div>
+      <dl class="project-facts">
+        <div><dt>Area</dt><dd>Analog authentication</dd></div>
+<div><dt>Core components</dt><dd>Comparators, logic gates, delay circuit</dd></div>
+<div><dt>Focus</dt><dd>Hardware security and circuit design</dd></div>
+<div><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </div>
+  </article>
+</main>
+<footer><span>© <span id="year"></span> Saurav Koduri</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

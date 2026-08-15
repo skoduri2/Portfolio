@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Five-Finger Robotic Hand Controller | Saurav Koduri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-name" href="index.html">Saurav Koduri</a>
+  <nav aria-label="Primary navigation">
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article class="detail-page">
+    <a class="back-link" href="index.html#projects">← Back to portfolio</a>
+    <p class="project-kicker">Robotics · PCB Design · Embedded Systems</p>
+    <h1>Five-Finger Robotic Hand Controller</h1>
+    <div class="detail-actions"><a class="project-action" href="https://github.com/skoduri2/SigRobotics_5_Finger_PCB" target="_blank" rel="noopener">GitHub repository ↗</a></div>
+
+    <div class="detail-hero">
+      <img src="assets/sigrobotics-schematic.jpg" alt="KiCad schematic for the five-finger robotic hand controller">
+    </div>
+
+    <div class="detail-layout">
+      <div class="detail-copy">
+        <p>This project is the electrical backbone for a tendon-driven five-finger robotic hand. I’m designing a custom four-layer board in KiCad that combines the main controller, actuator communications, programming and debug access, and power distribution into one compact platform. The board centers on an ESP32-S3 and is being designed to control ten DYNAMIXEL XL330-M288-T actuators without requiring a separate controller for each motor.</p>
+<p>A major design challenge is making the low-voltage logic and high-current motor system coexist reliably. The communication side uses a shared 3.3 V TTL half-duplex bus, while the power architecture separates the logic and motor rails from a 3S battery source. I’m also integrating USB-C programming, boot/reset circuitry, ESD protection, test points, and expansion interfaces, while budgeting current and planning copper and thermal performance for a 5 V rail that may need to sustain roughly 15–16 A. The schematic shown above is an in-progress view of that controller and communication architecture.</p>
+      </div>
+      <dl class="project-facts">
+        <div><dt>Role</dt><dd>PCB and embedded electronics design</dd></div>
+<div><dt>Platform</dt><dd>ESP32-S3</dd></div>
+<div><dt>Actuators</dt><dd>10 × DYNAMIXEL XL330-M288-T</dd></div>
+<div><dt>Tools</dt><dd>KiCad, embedded C/C++, bench validation</dd></div>
+<div><dt>Status</dt><dd>In development</dd></div>
+      </dl>
+    </div>
+  </article>
+</main>
+<footer><span>© <span id="year"></span> Saurav Koduri</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

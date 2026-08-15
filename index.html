@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Saurav Koduri — Electrical and Computer Engineering Portfolio.">
+  <title>Saurav Koduri | Electrical and Computer Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="site-name" href="index.html">Saurav Koduri</a>
+  <nav aria-label="Primary navigation">
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero-split" aria-label="Portfolio introduction">
+    <div class="hero-media">
+      <img src="assets/sigrobotics-test.gif" alt="Looping SigRobotics test project video">
+      <span class="hero-media-label">SigRobotics test project</span>
+    </div>
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Electrical and Computer Engineering Portfolio</p>
+      <h1>Saurav<br>Koduri</h1>
+      <p class="hero-description">
+        Electrical Engineering student at the University of Illinois Urbana-Champaign,
+        focused on robotics, embedded systems, PCB design, computer vision, and edge AI.
+      </p>
+      <div class="hero-links">
+        <a href="#projects">Selected projects ↓</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="section-title-row">
+      <h2>Portfolio Highlights</h2>
+      <p>Selected projects spanning robotics hardware, embedded electronics, autonomous systems, and applied AI.</p>
+    </div>
+
+    <div class="project-list">
+      <article class="project-card">
+        <a class="project-image-link" href="sigrobotics.html" aria-label="Open Five-Finger Robotic Hand Controller project">
+          <img src="assets/sigrobotics-schematic.jpg" alt="KiCad schematic for the five-finger robotic hand controller">
+        </a>
+        <div class="project-card-copy">
+          <p class="project-kicker">Robotics · PCB Design · Embedded Systems</p>
+          <h3><a href="sigrobotics.html">Five-Finger Robotic Hand Controller</a></h3>
+          <p>
+            A custom electronics platform for a tendon-driven five-finger robotic hand,
+            integrating control, high-current power distribution, and a shared actuator network
+            around an ESP32-S3 and ten DYNAMIXEL motors.
+          </p>
+          <div class="project-links">
+            <a class="read-more" href="sigrobotics.html">Read project details →</a>
+            <a class="read-more" href="https://github.com/skoduri2/SigRobotics_5_Finger_PCB" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-image-link" href="argonne.html" aria-label="Open Argonne Sage wildlife detection project">
+          <img src="assets/argonne-wildlife.jpg" alt="Leopard detected by the edge AI wildlife detection pipeline">
+        </a>
+        <div class="project-card-copy">
+          <p class="project-kicker">Edge AI · Computer Vision · Research</p>
+          <h3><a href="argonne.html">Wildlife Detection on NSF Sage</a></h3>
+          <p>
+            A field-ready edge AI system that turns camera frames into animal identity,
+            risk classification, tracking, and alerts using a multi-model inference pipeline
+            deployed on Sage edge infrastructure.
+          </p>
+          <div class="project-links">
+            <a class="read-more" href="argonne.html">Read project details →</a>
+            <a class="read-more" href="https://github.com/avasyuuu/sage-summer-camp-2026" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-image-link" href="tractor.html" aria-label="Open Autonomous Agricultural Tractor project">
+          <img src="assets/autonomous-tractor.png" alt="Red agricultural tractor used as a representative image for the autonomous tractor project">
+        </a>
+        <div class="project-card-copy">
+          <p class="project-kicker">Robotics · ROS · Simulation</p>
+          <h3><a href="tractor.html">Autonomous Agricultural Tractor</a></h3>
+          <p>
+            An autonomy and simulation effort for a ROS-based tractor operating in a pecan farm,
+            focused on modernizing the software stack, improving perception, and creating a safer
+            workflow for testing new behaviors.
+          </p>
+          <a class="read-more" href="tractor.html">Read project details →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <a class="project-image-link" href="resistive-key.html" aria-label="Open Resistive-Key Vehicle Safety System project">
+          <img src="assets/resistive-key-schematic.jpg" alt="Hand-drawn schematic for the resistive-key vehicle safety system">
+        </a>
+        <div class="project-card-copy">
+          <p class="project-kicker">Analog Electronics · Logic · Hardware Security</p>
+          <h3><a href="resistive-key.html">Resistive-Key Vehicle Safety System</a></h3>
+          <p>
+            A hardware authentication prototype that validates a resistor-coded key with analog
+            comparators and logic, then uses a timed lockout to make rapid repeated guessing harder.
+          </p>
+          <a class="read-more" href="resistive-key.html">Read project details →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-title-row">
+      <h2>Technical Toolkit</h2>
+    </div>
+    <div class="skills-row">
+      <div><strong>Programming & ML</strong><span>C/C++, Python, SQL, PyTorch</span></div>
+      <div><strong>Robotics & Embedded</strong><span>ROS 2, ESP32, DYNAMIXEL, actuator integration</span></div>
+      <div><strong>Engineering Tools</strong><span>KiCad, SolidWorks, MATLAB, Isaac Sim, Linux</span></div>
+      <div><strong>Coursework</strong><span>Digital Systems, Analog Signal Processing, Computer Systems and Programming, Data Structures and Algorithms</span></div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>
+      For internship, research, or project opportunities, reach me at
+      <a class="inline-link" href="mailto:skoduri2@illinois.edu">skoduri2@illinois.edu</a>.
+    </p>
+    <p><a class="read-more" href="resume.pdf" target="_blank" rel="noopener">View résumé →</a></p>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Saurav Koduri</span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

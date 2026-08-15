@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wildlife Detection on NSF Sage | Saurav Koduri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-name" href="index.html">Saurav Koduri</a>
+  <nav aria-label="Primary navigation">
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article class="detail-page">
+    <a class="back-link" href="index.html#projects">← Back to portfolio</a>
+    <p class="project-kicker">Argonne National Laboratory · Edge AI · Computer Vision</p>
+    <h1>Wildlife Detection on NSF Sage</h1>
+    <div class="detail-actions"><a class="project-action" href="https://github.com/avasyuuu/sage-summer-camp-2026" target="_blank" rel="noopener">GitHub repository ↗</a></div>
+
+    <div class="detail-hero">
+      <img src="assets/argonne-wildlife.jpg" alt="Leopard detected and scored by the wildlife detection pipeline">
+    </div>
+
+    <div class="detail-layout">
+      <div class="detail-copy">
+        <p>During the Argonne Sage program, I worked on an edge-AI wildlife monitoring system intended to do more than simply draw a bounding box around an animal. The pipeline first detects an animal in a camera frame, then identifies the species and evaluates the potential risk of the encounter. In the version shown above, the system detects a leopard, tracks it as a persistent object, and produces an annotated output that includes identity confidence and a danger score.</p>
+<p>The system combines YOLO11 for detection, BioCLIP 2 for species identification, and Gemma 3 for contextual risk scoring. I also developed multi-frame tracking so the same animal could be followed across successive images without generating duplicate alerts. To run the workflow on NSF Sage edge-computing infrastructure, the application was containerized with Docker and integrated with PyWaggle and Sage job manifests. The deployment handles image ingestion, structured detection publishing, persistent tracker state, and fault-tolerant storage of CSV results and annotated images.</p>
+      </div>
+      <dl class="project-facts">
+        <div><dt>Program</dt><dd>Argonne National Laboratory Sage</dd></div>
+<div><dt>Models</dt><dd>YOLO11, BioCLIP 2, Gemma 3</dd></div>
+<div><dt>Deployment</dt><dd>Docker, PyWaggle, NSF Sage</dd></div>
+<div><dt>Focus</dt><dd>Detection, classification, tracking, risk scoring</dd></div>
+<div><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </div>
+  </article>
+</main>
+<footer><span>© <span id="year"></span> Saurav Koduri</span></footer>
+<script src="script.js"></script>
+</body>
+</html>

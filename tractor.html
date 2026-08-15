@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Autonomous Agricultural Tractor | Saurav Koduri</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="site-name" href="index.html">Saurav Koduri</a>
+  <nav aria-label="Primary navigation">
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#skills">Skills</a>
+    <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <article class="detail-page">
+    <a class="back-link" href="index.html#projects">← Back to portfolio</a>
+    <p class="project-kicker">Robotics · ROS · Simulation</p>
+    <h1>Autonomous Agricultural Tractor</h1>
+    <div class="detail-actions"></div>
+
+    <div class="detail-hero">
+      <img src="assets/autonomous-tractor.png" alt="Red agricultural tractor used as a representative image for the autonomous tractor project">
+    </div>
+
+    <div class="detail-layout">
+      <div class="detail-copy">
+        <p>This project focuses on an autonomous tractor platform designed to navigate and operate in a pecan farm. I’ve been working on the software and perception side of the system, where the goal is to improve how the vehicle understands the environment while making the overall autonomy stack easier to develop and test.</p>
+<p>A large part of the work is modernization and test infrastructure. I’m helping migrate the platform from ROS 1 to ROS 2 so newer autonomy and perception components can be integrated more cleanly, while also exploring upgrades beyond the existing YOLO-based perception stack. In parallel, I’m creating an Isaac Sim version of the tractor environment so behaviors and sensor configurations can be evaluated in simulation before being tested on the physical vehicle.</p>
+      </div>
+      <dl class="project-facts">
+        <div><dt>Area</dt><dd>Autonomous agricultural robotics</dd></div>
+<div><dt>Middleware</dt><dd>ROS 1 → ROS 2</dd></div>
+<div><dt>Simulation</dt><dd>NVIDIA Isaac Sim</dd></div>
+<div><dt>Focus</dt><dd>Perception, migration, testing</dd></div>
+<div><dt>Year</dt><dd>2026</dd></div>
+      </dl>
+    </div>
+  </article>
+</main>
+<footer><span>© <span id="year"></span> Saurav Koduri</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
